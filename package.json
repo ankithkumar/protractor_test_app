@@ -1,0 +1,16 @@
+{
+  "name": "@echostar/todoComponent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-spec-reporter": "^4.2.1",
+    "protractor-html-screenshot-reporter": "0.0.21"
+  }
+}
