@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="testing todo app" timestamp="2017-09-03T23:59:13" hostname="localhost" time="44.79" errors="0" tests="6" skipped="0" failures="0">
+  <testcase classname="testing todo app" name="sends 5 values" time="27.8">
+  </testcase>
+  <testcase classname="testing todo app" name="clicks the checkbox of all item one by one" time="3.648">
+  </testcase>
+  <testcase classname="testing todo app" name="deletes the first element and checks the count to be decreased by 1" time="2.767">
+  </testcase>
+  <testcase classname="testing todo app" name="sends 5 values" time="4.443">
+  </testcase>
+  <testcase classname="testing todo app" name="clicks the checkbox of all item one by one to get completed" time="3.163">
+  </testcase>
+  <testcase classname="testing todo app" name="clicks the checkbox of all item one by one to start again " time="2.965">
+  </testcase>
+ </testsuite>
+</testsuites>

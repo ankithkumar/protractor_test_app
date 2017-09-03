@@ -1,3 +1,5 @@
+let fs = require("fs");
+
 describe("testing todo app",function () {
    let textbox = element(by.model("$ctrl.text"));
    let submitBtn = element(by.id("submitBtn"));
@@ -26,7 +28,7 @@ describe("testing todo app",function () {
            expect(res.get(itemcount).getText()).toContain("complete");
        }
    });
-   it("deletes the first element and checks the count to be decreased by 1",function () {
+   it("deletes the element one by one and checks the count",function () {
        for(var itemcount=0; itemcount < initval; itemcount++) {
            res.get(0).element(by.id('deleteBtn')).click();
            expect(res.count()).toBe(initval-itemcount-1);
@@ -50,7 +52,7 @@ describe("testing todo app",function () {
     it("clicks the checkbox of all item one by one to start again ",function () {
         for(var itemcount=0; itemcount < initval; itemcount++) {
             res.get(itemcount).element(by.id("checkbox")).click()
-            expect(res.get(itemcount).getText()).toContain("complete"); // should fail
+            expect(res.get(itemcount).getText()).not.toContain("complete");
         }
     });
 });
