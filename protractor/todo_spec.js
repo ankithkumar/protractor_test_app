@@ -41,5 +41,16 @@ describe("testing todo app",function () {
         }
         expect(res.count()).toEqual(initval+5);
    });
-
+   it("clicks the checkbox of all item one by one to get completed",function () {
+        for(var itemcount=0; itemcount < initval; itemcount++) {
+            res.get(itemcount).element(by.id("checkbox")).click()
+            expect(res.get(itemcount).getText()).toContain("complete");
+        }
+   });
+    it("clicks the checkbox of all item one by one to start again ",function () {
+        for(var itemcount=0; itemcount < initval; itemcount++) {
+            res.get(itemcount).element(by.id("checkbox")).click()
+            expect(res.get(itemcount).getText()).toContain("complete"); // should fail
+        }
+    });
 });
